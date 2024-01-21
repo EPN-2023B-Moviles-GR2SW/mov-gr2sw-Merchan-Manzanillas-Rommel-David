@@ -1,0 +1,1 @@
+[{"nombre":"CuentaAhorros","id":1,"usuarioId":1,"cantidad":200.0,"esCaducada":false,"fechaCreacion":"Dec 19, 2023, 6:49:04 PM"},{"nombre":"Cuenta Corriente","id":2,"usuarioId":1,"cantidad":20000.0,"esCaducada":false,"fechaCreacion":"Dec 27, 2023, 12:00:00 AM"}]
