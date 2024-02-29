@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ivMatch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="-7dp"
+    tools:layout_editor_absoluteY="-87dp">
+
+    <ImageView
+        android:id="@+id/imageMatch"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/persona_m1" />
+
+    <TextView
+        android:id="@+id/nombreM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:elegantTextHeight="true"
+        android:text="Nombre"
+        android:textAllCaps="true"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMatch"
+        app:layout_constraintStart_toEndOf="@+id/imageMatch"
+        app:layout_constraintTop_toTopOf="@+id/imageMatch"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/edadM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:elegantTextHeight="true"
+        android:text="Edad"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/nombreM"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nombreM"
+        app:layout_constraintTop_toBottomOf="@+id/nombreM" />
+
+    <TextView
+        android:id="@+id/cercaniaM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:elegantTextHeight="true"
+        android:text="2 millas"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/edadM"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edadM"
+        app:layout_constraintTop_toBottomOf="@+id/edadM" />
+</androidx.constraintlayout.widget.ConstraintLayout>
