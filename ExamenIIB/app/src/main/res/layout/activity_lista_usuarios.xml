@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E0E0E0"
+    tools:context=".controller.ListaUsuarios">
+
+    <TextView
+        android:id="@+id/txtListaUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Usuarios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <ListView
+        android:id="@+id/lvUsuarios"
+        android:layout_width="281dp"
+        android:layout_height="526dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtListaUsuarios"
+        app:layout_constraintStart_toStartOf="@+id/txtListaUsuarios"
+        app:layout_constraintTop_toBottomOf="@+id/txtListaUsuarios" />
+
+    <Button
+        android:id="@+id/btnCrearUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#a2cb8b"
+        android:text="Crear Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/lvUsuarios"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/lvUsuarios"
+        app:layout_constraintTop_toBottomOf="@+id/lvUsuarios"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <TextView
+        android:id="@+id/tituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0E0E0"
+        android:text="Banco Chauchita"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtListaUsuarios"
+        app:layout_constraintEnd_toEndOf="@+id/txtListaUsuarios"
+        app:layout_constraintStart_toStartOf="@+id/txtListaUsuarios"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
